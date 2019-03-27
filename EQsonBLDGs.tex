@@ -59,7 +59,7 @@ Earthquakes are major disasters that cause great amounts of damage to buildings 
 				
 				\begin{figure}[h!]
    					\centering
-   					\includegraphics[width=120mm]{SPRINGS-Model1.jpg}
+   					\includegraphics[width=120mm]{pictures/SPRINGS-Model1.jpg}
 					\centering
    					\caption{4-story point-mass building model}
 					\medskip
@@ -73,7 +73,7 @@ Earthquakes are major disasters that cause great amounts of damage to buildings 
 				\begin{figure}[h!]
   					\centering
  				 	\begin{minipage}[b]{0.4\textwidth}
-    						\includegraphics[width=65mm]{SPRINGS-Model2A.jpg}
+    						\includegraphics[width=65mm]{pictures/SPRINGS-Model2A.jpg}
     						\caption{$i^{th}$ floor statics}
 						\medskip
 						\small
@@ -82,7 +82,7 @@ Earthquakes are major disasters that cause great amounts of damage to buildings 
   					\end{minipage}
  					 \hfill
 					\begin{minipage}[b]{0.4\textwidth}
- 				  	 	\includegraphics[width=60mm]{SPRINGS-Model3A.jpg}
+ 				  	 	\includegraphics[width=60mm]{pictures/SPRINGS-Model3A.jpg}
     						\caption{$i^{th}$ floor dynamics}
 						\medskip
 					\small
@@ -600,7 +600,7 @@ Likewise, setting  $\alpha_1 = 1$, $\beta_0 = 0$ and $\alpha_1 = 1$ corresponds 
 Considering $h\rho$ as the variable dependent on $\theta$ we can form a geometric interpretation of the stability region. Graphing these equations produces the stability charts of Euler's method. Notice that both Euler schemes have a stability region bounded by a circle of radius 1 and shifted 1 to left from the origin for the forward Euler method and 1 to the right from the origin for the backward Euler method. This is the condition of stability. The forward Euler method is stable within the circle while the backward Euler method is stable outside the circle. The unstable regions are ones where the numerical procedure introduces amplification. The backward Euler method also contains a region of overstablity, that is a region where the numerical solution produces damping. This region is where the real part of $h\rho$ is positive as expected. 
 				\begin{figure}[h!]
    					\centering
-   					\includegraphics[width=100mm]{GraphEulerB.jpg}
+   					\includegraphics[width=100mm]{pictures/GraphEulerB.jpg}
 					\centering
    					\caption{BE stability region}
 				           \label{fig4}
@@ -609,7 +609,7 @@ Considering $h\rho$ as the variable dependent on $\theta$ we can form a geometri
 Now we will proceed to determine if the forward and backward Euler's methods applied to the equation of motion lie within their respective stability regions or not. By uncoupling the equation of motion, we can analyze the individual modes of the system by just considering the mode that produces maximum amplifiaction; that is we consider the spectral radius $\rho$. The equation of motion system can be uncoupled into 
 				\begin{figure}[h!]
    					\centering
-   					\includegraphics[width=100mm]{GraphEulerF.jpg}
+   					\includegraphics[width=100mm]{pictures/GraphEulerF.jpg}
 					\centering
    					\caption{FE stability region}
 				           \label{fig5}
@@ -928,7 +928,7 @@ For $\gamma = \frac{1}{2}$ and $\beta = \frac{1}{4}$ the method becomes uncondit
 
 				\begin{figure}[h!]
    					 \centering
-   					 \includegraphics[width=90mm]{GraphNM.jpg}
+   					 \includegraphics[width=90mm]{pictures/GraphNM.jpg}
    					 \caption{Newmark Method Stability Regions}
 				            \label{fig6}
   				\end{figure}
@@ -990,13 +990,13 @@ where $\alpha = 2.2882$, $\beta = 0.8740$, $c_1 = 0.1857$, $c_2 = -0.1598$. Figu
 				\begin{figure}[h!]
   					\centering
  				 	\begin{minipage}[b]{0.4\textwidth}
-    						\includegraphics[width=90mm]{1floor.jpg}
+    						\includegraphics[width=90mm]{pictures/1floor.jpg}
 						\caption{1st floor motion}
 						\label{fig7}
   					\end{minipage}
  					 \hfill
 					\begin{minipage}[b]{0.4\textwidth}
- 				  	 	\includegraphics[width=90mm]{2floor.jpg}
+ 				  	 	\includegraphics[width=90mm]{pictures/2floor.jpg}
 						\caption{2nd floor motion}
 						\label{fig8}
  					 \end{minipage}
@@ -1004,7 +1004,7 @@ where $\alpha = 2.2882$, $\beta = 0.8740$, $c_1 = 0.1857$, $c_2 = -0.1598$. Figu
 In the example we used the same time step for the Euler method as for the Newmark method (specifically we used $\Delta t = 0.1$). If we decrease the time step for the Euler method we will approach the true solution to farther into time. This shows another benefit of the Newmark method - relatively high accuracy for large time steps. In this particular example an Euler method with $\Delta t = 0.001$ was about as accurate as the Newmark method with time step $\Delta t = 0.1$ (see Figure \ref{fig9}). 
 				\begin{figure}[h!]
    					 \centering
-   					 \includegraphics[width=90mm]{Eulerdiff.jpg}
+   					 \includegraphics[width=90mm]{pictures/Eulerdiff.jpg}
    					 \caption{Euler method approaching solution at different time steps}
 				            \label{fig9}
   				\end{figure}
@@ -1041,7 +1041,7 @@ In 1940 an earthquake occurred in the Imperial Valley in California. It became k
 
 				\begin{figure}[h!]
    					 \centering
-   					 \includegraphics[width=180mm]{ElCentro.jpg}
+   					 \includegraphics[width=180mm]{pictures/ElCentro.jpg}
    					 \caption{El Centro Acceleration Data}
 				            \label{fig10}
   				\end{figure}
@@ -1050,14 +1050,14 @@ In 1940 an earthquake occurred in the Imperial Valley in California. It became k
 
 				\begin{figure}[h!]
    					\centering
-   					\includegraphics[width=142mm]{FM1.jpg}
+   					\includegraphics[width=142mm]{pictures/FM1.jpg}
 					\caption{1st floor No Damping}
 					\label{FM1}
   				\end{figure}
 
 				\begin{figure}[h!]
    					\centering
-					\includegraphics[width=142mm]{FMD1.jpg}
+					\includegraphics[width=142mm]{pictures/FMD1.jpg}
 					\caption{1st floor Damping}
 					\label{FMD1}
   				\end{figure}
@@ -1067,14 +1067,14 @@ In 1940 an earthquake occurred in the Imperial Valley in California. It became k
 
 				\begin{figure}[h!]
    					\centering
-   					\includegraphics[width=142mm]{EmpireState.jpg}
+   					\includegraphics[width=142mm]{pictures/EmpireState.jpg}
 					\caption{1st floor}
 					\label{EmpireState}
   				\end{figure}
 
 				\begin{figure}[h!]
    					\centering
-					\includegraphics[width=142mm]{EmpireState50.jpg}
+					\includegraphics[width=142mm]{pictures/EmpireState50.jpg}
 					\caption{50th floor}
 					\label{EmpireState50}
   				\end{figure}
@@ -1093,7 +1093,7 @@ with initial conditions $x(0) = 1$, $\dot{x}(0) = 0$. The exact solution is $x =
 
 				\begin{figure}[h!]
    					 \centering
-   					 \includegraphics[width=90mm]{untitled.jpg}
+   					 \includegraphics[width=90mm]{pictures/untitled.jpg}
    					 \caption{Errors in the Newmark method with different parameters}
 				            \label{fig17}
   				\end{figure}
@@ -1156,7 +1156,7 @@ We plot the conditional stability limits and the errors, both of which are depen
 
 				\begin{figure}[h!]
    					 \centering
-   					 \includegraphics[width=90mm]{ccl3.jpg}
+   					 \includegraphics[width=90mm]{pictures/ccl3.jpg}
    					 \caption{Conditional stability limits and associated errors}
 				            \label{fig17}
   				\end{figure}
@@ -1191,15 +1191,15 @@ By using numerical techniques and computational approaches to solving the dynami
 
 	\subsection{Backward Euler Code}
 
-		\lstinputlisting{Eulerb.m}
+		\lstinputlisting{matlab_files/Eulerb.m}
 
 	\subsection{Runge-Kutta 4 Code}
 
-		\lstinputlisting{RK4.m}
+		\lstinputlisting{matlab_files/RK4.m}
 
 	\subsection{Newmark Code}
 
-		\lstinputlisting{DynamicNewmark.m}
+		\lstinputlisting{matlab_files/DynamicNewmark.m}
 
 
 \begin{thebibliography}{9}
